@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos Alimenticios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Catálogo de Productos Alimenticios</h1>
+        </header>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="proveedorFilter">Filtrar por Proveedor:</label>
+                <select id="proveedorFilter">
+                    <option value="">Todos los proveedores</option>
+                    <!-- Opciones cargadas dinámicamente -->
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="categoriaFilter">Filtrar por Categoría:</label>
+                <select id="categoriaFilter">
+                    <option value="">Todas las categorías</option>
+                    <!-- Opciones cargadas dinámicamente -->
+                </select>
+            </div>
+            
+            <button id="filterButton" class="filter-btn">Filtrar Productos</button>
+        </div>
+        
+        <div class="table-container">
+            <table id="productosTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Proveedor</th>
+                        <th>Categoría</th>
+                        <th>Stock Unitario</th>
+                        <th>Precio Unidad</th>
+                        <th>Unidades En Existencia</th>
+                        <th>Unidades En Pedido</th>
+                        <th>Nivel Nuevo Pedido</th>
+                        <th>Suspendido</th>
+                    </tr>
+                </thead>
+                <tbody id="productosBody">
+                    <!-- Datos cargados dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
